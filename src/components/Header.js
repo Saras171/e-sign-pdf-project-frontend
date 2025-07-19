@@ -19,7 +19,7 @@ export default function Header({ username, day, date }) {
         {/* Logo + Title */}
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 w-full sm:w-auto justify-center sm:justify-start">
           <Image
-            src="/images/logo.jpg"
+            src="/images/logo.jpeg"
             alt="Logo"
             width={60}
             height={60}

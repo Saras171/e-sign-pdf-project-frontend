@@ -26,7 +26,7 @@ export default function Dashboard() {
           className="relative overflow-hidden rounded-full shadow-xl border-4 border-white w-48 h-48 sm:w-60 sm:h-60 bg-white"
         >
           <Image
-  src="/images/logo.jpg"
+  src="/images/logo.jpeg"
   alt="eSeal Logo"
   fill
   sizes="(max-width: 768px) 240px, 192px"
