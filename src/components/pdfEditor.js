@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-import PdfViewer from './PDFViewer';
 import SignatureSidebar from './signSideBar';
+import dynamic from 'next/dynamic';
+
+const PdfViewer = dynamic(() => import('./PDFViewer'), { ssr: false });
 
 export default function PdfEditor({ url, docId, userId, onPdfSigned }) {
   const [refreshKey, setRefreshKey] = useState(0);   // State to trigger re-renders of PDF viewer when a signature is saved

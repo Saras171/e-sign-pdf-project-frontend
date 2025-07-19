@@ -13,10 +13,16 @@ const nextConfig = {
       },
     ],
   },
-  webpack: (config) => {
+  webpack: (config, { isServer }) => {
+    // Prevent canvas module from being bundled
+    if (!isServer) {
     config.resolve.fallback = {
+      ...config.resolve.fallback,
+        canvas: false,
       fs: false,
+        path: false,
     };
+  }
     return config;
   },
 };
