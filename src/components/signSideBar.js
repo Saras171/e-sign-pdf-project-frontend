@@ -33,9 +33,7 @@ import {
     const [savedSignatures, setSavedSignatures] = useState([]);
 
 const [pdfPreviewUrl, setPdfPreviewUrl] = useState(null);
-const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
-    const [editMode, setEditMode] = useState(false);
+const [editMode, setEditMode] = useState(false);
 
     const [successModalOpen, setSuccessModalOpen] = useState(false);
 const [generatedFileName, setGeneratedFileName] = useState('');

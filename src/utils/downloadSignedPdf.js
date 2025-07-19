@@ -41,7 +41,7 @@ async function loadFontBytes(fontName) {
   }
 
   const buffer = await res.arrayBuffer();
-  if (!buffer.byteLength || buffer.byteLength < 100) {
+  if (!buffer.byteLength || buffer.byteLength < 2048) {
     throw new Error(`⚠️ Font "${fontName}" seems corrupted or incomplete.`);
   }
 
